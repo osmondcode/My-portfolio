@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- CONTAINER -->
+    <div class="head-container">
+        <!-- NAVIGATION BAR -->
+        <nav>
+            <span class="nav-left">
+                <img src="./img/pit.png" >
+            </span>
+            <span class="nav-right not hidden">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Contact</a>
+            </span>
+            <i class="fa-solid fa-bars" onclick="opnNav()"></i>
+        </nav>
+        
+        <!-- HIDDEN NAVIGATION BAR -->
+        <nav id="hidden-nav">
+
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Contact</a>
+
+        </nav>
+        <!-- HIDDEN NAVIGATION BAR -->
+
+        <!-- NAVIGATION BAR -->
+
+        <!-- BANNER DIV -->
+        <span class="banner">
+            <span class="banner-text">
+                <h3>UI/UX Designer</h3>
+                <h1>
+                    Hi, i'm <span>Osmond</span> <br> From Nigeria
+                </h1>
+            </span>
+            <span class="banner-img">
+                <img src="./img/de713d8dba6229888739005475216c4c.jpg" alt="">
+            </span>
+        </span>
+        <!-- BANNER DIV -->
+    </div>
+    <!-- CONTAINER -->
+
+    <!-- ABOUT CONTAINER -->
+    <div class="about-container">
+        <span class="about-img">
+            <img src="./img/about-img.jpg" alt="">
+        </span>
+        <span class="about-text">
+            <h1>About Me</h1>
+            <p>Hi, i'm Osmond! i'm a web developer with indepth expirience in a nutshell, i create websites that help organisations addredd business challenges and meet their needs. I manage everything from website navigation and layout to a company's web hosting and security architecture. My expertise lies within front-end web apps, and the main languages in my tech stack are JavaScript, React, and of course HTML/CSS. I'm a lifelong  learner (currently taking a course on building AI chatbots with Python!) and love to read, and find a lovely coffee shops in Lagos.</p>
+
+            <span class="about-skill">
+                <span class="skill-head">
+                    <h3 class="tab-links active-link" onclick="openTab('skills')">Skills</h3>
+                    <h3 class="tab-links" onclick="openTab('experience')">Experience</h3>
+                    <h3 class="tab-links" onclick="openTab('education')">Education</h3>
+                </span>
+
+                <span class="tab-contents active-tab" id="skills">
+                    <h4>UI/UX</h4>
+                    <p>Designing web/App interfaces</p>
+
+                    <h4>Web Development</h4>
+                    <p>Web App Development</p>
+
+                    <h4>App Development</h4>
+                    <p>Andriod Apps & IOS Apps</p>
+                </span>
+
+                <span class="tab-contents" id="experience">
+                    <h4>2022-Current</h4>
+                    <p>intenship at Microsoft</p>
+                    
+                    <h4>2020-2021</h4>
+                    <p>UI/UX Design Training at W3schools</p>
+
+                    <h4>2018-2020</h4>
+                    <p>Senior developer at BIO Tech in Spain</p>
+                </span>
+
+                <span class="tab-contents" id="education">
+                    <h4>2021-2022</h4>
+                    <p>Stack Overflow</p>
+
+                    <h4>2020-2021</h4>
+                    <p>Udemy</p>
+
+                    <h4>2017-2019</h4>
+                    <p>W3schools</p>
+                </span>
+            </span>
+        </span>
+    </div>
+    <!-- ABOUT CONTAINER -->
+
+    <!-- MY SERVICE CONTAINER -->
+    <div class="service">
+        <h1>My Service</h1>
+
+        <span class="service-list">
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, consequuntur nisi! Dicta deserunt accusamus beatae nisi quia praesentium totam quis</p>
+            <a href="#">Read more</a>
+        </span>
+
+        <span class="service-list">
+            <i class="fa-solid fa-crop"></i>
+            <h2>Web Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, consequuntur nisi! Dicta deserunt accusamus beatae nisi quia praesentium totam quis</p>
+            <a href="#">Read more</a>
+        </span>
+
+        <span class="service-list">
+            <i class="fa-brands fa-app-store"></i>
+            <h2>Web Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, consequuntur nisi! Dicta deserunt accusamus beatae nisi quia praesentium totam quis</p>
+            <a href="#">Read more</a>
+        </span>
+    </div>
+    <!-- MY SERVICE CONTAINER -->
+
+    <!-- MY WORK -->
+    <div class="my-work">
+        <h1>My Work</h1>
+
+        <span class="my-work-img">
+            <img src="./img/user-interface.jpg" alt="">
+            <span class="work-hover">
+                <h3>Social Media App</h3>
+                <p>The app that connects you to the most talented people around the world. Download it from play store</p>
+                <a href="#"><i class="fa-solid fa-external-link-alt"></i></a>
+            </span>
+        </span>
+
+        <span class="my-work-img">
+            <img src="./img/user-interface-2.jpg" alt="">
+            <span class="work-hover">
+                <h3>Music App</h3>
+                <p>The app that connects you to the most talented people around the world. Download it from play store</p>
+                <a href="#"><i class="fa-solid fa-external-link-alt"></i></a>
+            </span>
+        </span>
+
+        <span class="my-work-img">
+            <img src="./img/user-interface-3.jpg" alt="">
+            <span class="work-hover">
+                <h3>Online Shopping App</h3>
+                <p>The app that connects you to the most talented people around the world. Download it from play store</p>
+                <a href="#"><i class="fa-solid fa-external-link-alt"></i></a>
+                </span>
+        </span>
+
+        <a href="#" id="btn">See more</a>
+    </div>
+    <!-- MY WORK -->
+
+    <!-- DARK MODE  -->
+    <i class="fa-solid fa-moon" onclick="darkMode()"></i>
+    <!-- DARK MODE  -->
+
+    <script src="script.js"></script>
+</body>
+</html>
